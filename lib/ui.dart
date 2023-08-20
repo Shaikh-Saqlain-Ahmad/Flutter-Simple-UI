@@ -54,22 +54,60 @@ class _UIState extends State<UI> {
         SizedBox(
           height: 40,
         ),
-        TextFormField(
-          decoration: InputDecoration(
-              hintText: 'Email',
-              prefixIcon: Icon(
-                Icons.alternate_email,
-                color: Color(0xff323F48),
-              ),
-              fillColor: Color(0xff8F9FA),
-              filled: true,
-              focusedBorder: OutlineInputBorder(
-                  borderSide: BorderSide(color: Color(0xffE4E7EB)),
-                  borderRadius: BorderRadius.circular(10)),
-              hintStyle: TextStyle(fontFamily: 'Rubik Medium')),
+        Padding(
+          padding: EdgeInsets.symmetric(horizontal: 20),
+          child: TextFormField(
+            decoration: InputDecoration(
+                hintText: 'Email',
+                prefixIcon: Icon(
+                  Icons.alternate_email,
+                  color: Color(0xff323F48),
+                ),
+                fillColor: Color(0xff8F9FA),
+                filled: true,
+                focusedBorder: OutlineInputBorder(
+                    borderSide: BorderSide(color: Color(0xffE4E7EB)),
+                    borderRadius: BorderRadius.circular(10)),
+                hintStyle: TextStyle(fontFamily: 'Rubik Medium')),
+          ),
         ),
         SizedBox(
-          height: 100,
+          height: 20,
+        ),
+        Padding(
+          padding: EdgeInsets.only(left: 20, right: 20),
+          child: TextFormField(
+            decoration: InputDecoration(
+                hintText: 'Password',
+                suffixIcon: Icon(Icons.visibility_off),
+                prefixIcon: Icon(
+                  Icons.lock,
+                  color: Color(0xff323F48),
+                ),
+                fillColor: Color(0xff8F9FA),
+                filled: true,
+                focusedBorder: OutlineInputBorder(
+                    borderSide: BorderSide(color: Color(0xffE4E7EB)),
+                    borderRadius: BorderRadius.circular(10)),
+                hintStyle: TextStyle(fontFamily: 'Rubik Medium')),
+          ),
+        ),
+        SizedBox(
+          height: 15,
+        ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.end,
+          children: [
+            Text(
+              'Forgot Password?',
+              style: TextStyle(
+                decoration: TextDecoration.underline,
+              ),
+            ),
+          ],
+        ),
+        SizedBox(
+          height: 40,
         ),
         Container(
           height: 50,
@@ -81,7 +119,7 @@ class _UIState extends State<UI> {
               child: Text(
             'LOGIN',
             style: TextStyle(
-                fontFamily: 'Rubik Regular', fontSize: 20, color: Colors.white),
+                fontFamily: 'Rubik Medium', fontSize: 20, color: Colors.white),
           )),
         ),
         SizedBox(height: 15),
