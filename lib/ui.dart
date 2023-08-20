@@ -14,7 +14,7 @@ class _UIState extends State<UI> {
       backgroundColor: Colors.white,
       body: SafeArea(
           child: Column(children: [
-        Row(
+        const Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Image(height: 50, width: 50, image: AssetImage('images/logo.png')),
@@ -31,7 +31,7 @@ class _UIState extends State<UI> {
             ))
           ],
         ),
-        Center(
+        const Center(
             child: Text(
           'Log in',
           style: TextStyle(
@@ -39,10 +39,10 @@ class _UIState extends State<UI> {
               fontFamily: 'Rubik Medium',
               color: Color(0xff2D3142)),
         )),
-        SizedBox(
+        const SizedBox(
           height: 14,
         ),
-        Center(
+        const Center(
             child: Text(
           'Sign in to browse and purchase Electronic Arts Game',
           textAlign: TextAlign.center,
@@ -51,7 +51,7 @@ class _UIState extends State<UI> {
               fontFamily: 'Rubik Regular',
               color: Color(0xff4C5980)),
         )),
-        SizedBox(
+        const SizedBox(
           height: 40,
         ),
         Padding(
@@ -71,7 +71,7 @@ class _UIState extends State<UI> {
                 hintStyle: TextStyle(fontFamily: 'Rubik Medium')),
           ),
         ),
-        SizedBox(
+        const SizedBox(
           height: 20,
         ),
         Padding(
@@ -92,10 +92,10 @@ class _UIState extends State<UI> {
                 hintStyle: TextStyle(fontFamily: 'Rubik Medium')),
           ),
         ),
-        SizedBox(
+        const SizedBox(
           height: 15,
         ),
-        Row(
+        const Row(
           mainAxisAlignment: MainAxisAlignment.end,
           children: [
             Text(
@@ -106,7 +106,7 @@ class _UIState extends State<UI> {
             ),
           ],
         ),
-        SizedBox(
+        const SizedBox(
           height: 40,
         ),
         Container(
@@ -122,8 +122,8 @@ class _UIState extends State<UI> {
                 fontFamily: 'Rubik Medium', fontSize: 20, color: Colors.white),
           )),
         ),
-        SizedBox(height: 15),
-        Row(
+        const SizedBox(height: 15),
+        const Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
