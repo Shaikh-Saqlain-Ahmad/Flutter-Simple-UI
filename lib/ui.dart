@@ -31,14 +31,17 @@ class _UIState extends State<UI> {
             ))
           ],
         ),
-        const Center(
-            child: Text(
-          'Log in',
-          style: TextStyle(
-              fontSize: 24,
-              fontFamily: 'Rubik Medium',
-              color: Color(0xff2D3142)),
-        )),
+        InkWell(
+          child: const Center(
+              child: Text(
+            'Log in',
+            style: TextStyle(
+                fontSize: 24,
+                fontFamily: 'Rubik Medium',
+                color: Color(0xff2D3142)),
+          )),
+          onTap: () {},
+        ),
         const SizedBox(
           height: 14,
         ),
